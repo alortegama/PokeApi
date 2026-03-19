@@ -1,0 +1,69 @@
+# Built files
+/build
+**/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle
+.gradle/
+**/.gradle/
+gradle-app.setting
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+out/
+
+# Keystore files (NO pujar mai)
+*.jks
+*.keystore
+*.p12
+
+# Logs
+*.log
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# External native build
+.cxx/
+.externalNativeBuild/
+
+# Captures and generated files
+captures/
+*.hprof
+
+# Kotlin / Java compiler caches
+.kotlin/
+**/.kotlin/
+
+# NDK / CMake (si s'utilitza)
+obj/
+*.so
+
+# Lint
+lint-results*.html
+lint-results*.xml
+lint-report*.html
+
+# Unit test / coverage
+coverage/
+*.exec
+*.ec
+
+# Firebase / Google Services (normalment sí que es versiona)
+# google-services.json
+
+# Secrets / env
+*.env
+secrets.properties
+
+# Android Studio profiling
+*.trace
