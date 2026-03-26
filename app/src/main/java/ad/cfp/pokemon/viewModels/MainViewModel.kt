@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
 
-    private val _state = MutableStateFlow("Idle")
+    private val _state = MutableStateFlow("Esperant...")
     val state: StateFlow<String> = _state
 
     private val _pokemon = MutableStateFlow<Pokemon?>(null)

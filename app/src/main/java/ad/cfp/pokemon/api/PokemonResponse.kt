@@ -38,7 +38,7 @@ interface PokeApiService {
 
     @GET("pokemon/{idOrName}")
     suspend fun obtenirPokemon(
-        @Path("idOrName") idOrName: String
+        @Path("idOrName") idOrName: String = "1"
     ): Response<Pokemon>
 }
 
