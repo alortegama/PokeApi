@@ -1,5 +1,6 @@
 package ad.cfp.pokemon
 
+import ad.cfp.pokemon.api.Pokemon
 import ad.cfp.pokemon.databinding.ActivityMainBinding
 import ad.cfp.pokemon.viewModels.MainViewModel
 import android.os.Bundle
@@ -33,6 +34,20 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
+        lifecycleScope.launch {
+            mainViewModel.pokemon.collect { pokemon ->
+                pokemon?.let {
+                    //SEMPRE TINDRÉ UN POKEMÓN VÀLID
+                    updateUI(pokemon)
+                }
+            }
+        }
+        mainViewModel.findPokemon("23")
+    }
+    fun updateUI(pokemon: Pokemon){
+        binding.txtPokemonName.text = pokemon.name
+        binding.txtHeightValue.text = pokemon.height.toString()
+        binding.txtWeightValue.text = pokemon.weight.toString()
+        binding.txtPokemonId.text = pokemon.id.toString()
     }
 }
