@@ -47,4 +47,6 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.kotlin.coroutines.android)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    implementation(libs.glide)
 }

@@ -2,6 +2,7 @@
 agp = "9.1.0"
 coreKtx = "1.18.0"
 appcompat = "1.7.1"
+glide = "5.0.5"
 kotlinCoroutinesAndroid = "1.10.2"
 lifecycleViewmodelKtx = "2.10.0"
 loggingInterceptor = "5.3.2"
@@ -15,6 +16,7 @@ androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = 
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinCoroutinesAndroid" }
 logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
